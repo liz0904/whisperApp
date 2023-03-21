@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.whisperapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="위스퍼"
+        android:roundIcon="@mipmap/icon_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WhisperApp">
+        <activity android:name=".mypage.mypageMainActivity"></activity>
+        <activity android:name=".todo.EditTodoActivity" />
+        <activity android:name=".portfolio.PortRegActivity" />
+        <activity android:name=".portfolio.PortMainActivity" />
+        <activity android:name=".event.EventItemActivity" />
+        <activity android:name=".event.AddPostActivity" />
+        <activity android:name=".event.WebViewActivity" />
+        <activity android:name=".event.EventListActivity" />
+        <activity android:name=".community.MainCommuActivity" />
+        <activity android:name=".community.AddCommentActivity" />
+        <activity android:name=".community.ContentActivity" />
+        <activity android:name=".community.RegCommuActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".todo.TodoActivity"/>
+        <activity android:name=".login.JoinActivity" />
+        <activity android:name=".AwardsActivity" />
+        <activity android:name=".login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
